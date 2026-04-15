@@ -14,6 +14,22 @@ Important defines:
 - PERIOD: the duration of the symbol period.
 - DEBUG: if defined, prints after each message. If it is not defined, it waits until it received PAYLOAD_COUNTS messages to print, or until it receives "end". "end" can be sent via the serial terminal. 
 
-## Libraries
+# Libraries
 - libcorrect: https://github.com/quiet/libcorrect
 - DueAdcFast: https://github.com/AntonioPrevitali/DueAdcFast
+
+# Getting started
+
+To setup a workspace:
+```sh
+# The sdk version is given by the manual. The Zephyr SDK must be compatible with Zephyr itself. 
+# See also https://docs.google.com/spreadsheets/d/1wzGJLRuR6urTgnDFUqKk7pEB8O6vWu6Sxziw_KROxMA
+west init -m https://github.com/nrfconnect/sdk-nrf --mr v2.5.0 
+west update
+```
+
+To build and flash:
+```sh
+west build --board=nrf5340dk_nrf5340_cpuapp .
+west flash
+```
