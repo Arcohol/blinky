@@ -42,11 +42,13 @@ uint8_t length_message = 12;
 #define CSN_PIN  6
 
 #define SCTRL_PIN_CLK  8
-#define SCTRL_PIN 9
+// #define SCTRL_PIN 9
+#define SCTRL_PIN 12
 
 #define DRC_S_PIN_CLK  25
 #define DRC_S_CSN_PIN  26
-#define DRC_S_PIN 12
+// #define DRC_S_PIN 12
+#define DRC_S_PIN 9
 
 // Shutdown pin
 #define Shutdown1 31
